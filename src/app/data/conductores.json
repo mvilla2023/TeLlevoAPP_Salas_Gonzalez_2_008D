@@ -1,0 +1,87 @@
+{
+  "conductores": [
+    {
+      "id": 1,
+      "nombre": "Martin",
+      "password": "12345678",
+      "patente": "08W023",
+      "sede": "Maipu",
+      "jornada": "Diurna",
+      "email": "ma.salasv@gmail.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Felipe",
+      "password": "12345678",
+      "patente": "08N223",
+      "sede": "Maipu",
+      "jornada": "Diurna",
+      "email": "fe.gonzalezv@gmail.com"
+    },
+    {
+      "nombre": "",
+      "password": "",
+      "patente": "",
+      "sede": "",
+      "jornada": "",
+      "email": "",
+      "id": 3
+    },
+    {
+      "nombre": "Matias",
+      "password": "1234",
+      "patente": "1234",
+      "sede": "",
+      "jornada": "",
+      "email": "ma.salasv@gmail.com",
+      "id": 4
+    },
+    {
+      "nombre": "",
+      "password": "",
+      "patente": "",
+      "sede": "",
+      "jornada": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "nombre": "Martinez",
+      "password": "123456789",
+      "patente": "ALW254",
+      "sede": "",
+      "jornada": "",
+      "email": "ma.tinez@gmail.com",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "Martin2023",
+      "password": "12345678",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username": "Felipe2023",
+      "password": "12345678",
+      "role": "usuario",
+      "isactive": true
+    }
+  ],
+  "pasajeros": [
+    {
+      "id": 1,
+      "username": "Joaquin",
+      "password": "12345678",
+      "role": "usuario",
+      "isactive": true,
+      "pago": "efectivo",
+      "sede": "Maipu",
+      "jornada": "Diurna",
+      "email": "fe.gonzalez@gmail.com"
+    }
+  ]
+}

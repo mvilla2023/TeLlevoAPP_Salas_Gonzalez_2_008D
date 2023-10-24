@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font-size: 10px;">Registro Pasajero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="small" style="font-size: 20px;">Registro Pasajero</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card style="background-color: darkgoldenrod; margin: 5px;">
+    <ion-card-header>
+
+      <ion-card-title style="text-align: center;">Registra como Pasajero</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating" style="font-size: 15px">Nombre: </ion-label>
+            <ion-input type="text" placeholder="Felipe" name="nombre"
+                        [(ngModel)]="pasajero.nombre"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+            <ion-select placeholder="Seleccione su sede" style="font-size: 15px" [(ngModel)]="pasajero.sede">
+              <ion-select-option value="alameda">Alameda</ion-select-option>
+              <ion-select-option value="alonso">Alonso de Ovalle</ion-select-option>
+              <ion-select-option value="antonio">Antonio Varas</ion-select-option>
+              <ion-select-option value="arauco">Arauco</ion-select-option>
+              <ion-select-option value="educacion">Educación Continua</ion-select-option>
+              <ion-select-option value="maipu">Maipú</ion-select-option>
+              <ion-select-option value="melipilla">Melipilla</ion-select-option>
+              <ion-select-option value="nacimiento">Nacimiento</ion-select-option>
+              <ion-select-option value="norte">Plaza Norte</ion-select-option>
+              <ion-select-option value="oeste">Plaza Oeste</ion-select-option>
+              <ion-select-option value="vespucio">Plaza Vespucio</ion-select-option>
+              <ion-select-option value="puenteAlto">Puente Alto</ion-select-option>
+              <ion-select-option value="puertoMontt">Puerto Montt</ion-select-option>
+              <ion-select-option value="sanAndres">San Andrés de Concepción</ion-select-option>
+              <ion-select-option value="sanBernardo">San Bernardo</ion-select-option>
+              <ion-select-option value="sanCarlos">San Carlos de Apoquindo</ion-select-option>
+              <ion-select-option value="sanJoaquin">San Joaquín</ion-select-option>
+              <ion-select-option value="valparaiso">Valparaíso</ion-select-option>
+              <ion-select-option value="villarrica">Villarrica</ion-select-option>
+              <ion-select-option value="viña">Viña del Mar</ion-select-option>
+             </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-select placeholder="Seleccione una jornada" style="font-size: 14px"[(ngModel)]="pasajero.jornada">
+              <ion-select-option value="diurno">Diurno</ion-select-option>
+              <ion-select-option value="vespertino">Vespertino</ion-select-option>
+             </ion-select>
+            </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" style="font-size: 15px">Correo personal: </ion-label>
+            <ion-input type="email" placeholder="felip@gmail.com" name="email"
+                        [(ngModel)]="pasajero.email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" style="font-size: 15px">Contraseña: </ion-label>
+            <ion-input type="password" name="password"
+                        [(ngModel)]="pasajero.password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-label style="font-size: 12px; white-space: normal">Acepto las condiciones de uso.</ion-label>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-button (click)="Enviar()" expand="block" fill="solid" color="dark" shape="round">
+          Enviar
+        </ion-button>
+
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

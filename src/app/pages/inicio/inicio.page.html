@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="font-size: 15px;">TeLlevoApp</ion-title>
+  </ion-toolbar>
+  <div *ngFor = "let conductor of conductores"><ion-label>{{conductor.username}}</ion-label></div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="small" style="font-size: 30px;">TeLlevoApp!</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card style="background-color: darkkhaki;">
+    <img src="assets/TELLEVOAPP LOGO.png" style="background-color: lightblue;">
+    <ion-card-content class="texto" style="color: crimson;">
+      La aplicación que te ayudará a regresar a casa
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: bisque;">
+    <img src="assets/foto1.jpg">
+    <ion-card-content class="texto" style="color: green;">
+      Como conductor ¡puedes llevar a alumnos del Duoc UC a si tienen problemas para movilizarse!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: khaki;">
+    <img src="assets/foto3.jpg">
+    <ion-card-content class="texto" style="color: blue;">
+      Si tienes problemas para ir o regresar de manera presencial ¡Usa TeLlevoApp!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button style="font-size: 10px; "expand="full" shape="round" color="success"(click)="onlogout()">
+    Cerrar sesión
+  </ion-button>
+
+  
+
+
+</ion-content>
